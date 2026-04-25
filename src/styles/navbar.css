@@ -1,0 +1,55 @@
+#navbarTop{
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays above other content */
+    background-color: var(--primary);
+}
+
+nav{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    border-bottom: 2px solid var(--secondary);
+    justify-content:space-between;
+
+}
+
+a{
+   color: var(--secondary);
+}
+
+a:hover{
+    color: var(--secondary-dark)
+}
+
+.navbarLeft{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+}
+
+.navbarRight{
+    display:flex;
+    flex-direction: row;
+    padding-right: 15px;
+    font-size: 1.2rem;
+}
+
+@media screen and ( max-width: 768px){
+    .navbarLeft{
+        display: none;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width: 1024px){
+    nav{
+        justify-content: space-around;
+    }
+}

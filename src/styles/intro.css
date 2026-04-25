@@ -1,0 +1,77 @@
+@import "global.css";
+#intro{
+    width:100%;
+    max-width: 1000px;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px 0 20px;
+    gap: 5vw;
+
+    
+}
+
+#introBlock{
+    padding-right: 25px;
+    width: 450px;
+}
+
+#buttons{
+    display:flex;
+    gap: 20px;
+}
+
+#sayHi{
+    padding: 1em 1em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--primary);
+    transition: all 200ms;
+    
+    position: relative;
+    overflow: hidden;
+    background-color: var(--safety-orange);
+
+
+}
+
+#sayHi:hover{
+    background-color: var(--dark-orange);
+
+}
+
+#schedule:hover{
+    background-color: var(--secondary-dark);
+
+}
+
+#schedule{
+    padding: 1em 1em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--primary);
+    transition: all 200ms;
+    
+    position: relative;
+    overflow: hidden;
+    background-color: var(--secondary);
+}
+
+@media screen and (max-width: 800px){
+    #intro{
+        flex-direction:column ;
+    }
+
+    #buttons{
+        display: none;
+    }
+}
