@@ -1,4 +1,5 @@
 import "../styles/intro.css";
+import Simulation from './LeafSimulation.jsx'
 import heroImg from '../assets/hero.png'
 import me from '../assets/me.png'
 
@@ -6,14 +7,9 @@ import me from '../assets/me.png'
 const Intro = () => {
     return(
         <div id="intro">
-
-            <div id="introSimulation" >
-                <img src={heroImg} alt="hero" height= "450" />
-            </div>
-
+            <Simulation/>
             <div id="introBlock">
                 <h1> Hello, it's Isaiah</h1>
-                
                 <p>I am a rising <strong><u>Software Developer</u></strong> and artist. 
                     I am based in  Albany, NY and currently 
                     attending Siena Univeristy for my  Bachelors

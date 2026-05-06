@@ -1,5 +1,7 @@
 import "../styles/projects.css";
 import core4 from "../assets/images/core4.png"
+import woodStock from "../assets/images/woodStock.png"
+import tylersMaze from "../assets/images/tylersMaze.png"
 
 
 const track = document.getElementById('gallery');
@@ -21,7 +23,7 @@ function autoScroll() {
 }
 
 // Scroll every 3 seconds
-setInterval(autoScroll, 3000);
+setInterval(autoScroll, 10000);
 
 
 const Projects = () =>{
@@ -30,10 +32,27 @@ const Projects = () =>{
             <h1>
                 $: Projects
             </h1>
+            
             <div id="gallery">
-                <img src={core4} alt="" />
-                <img src={core4} alt="" />
-                <img src={core4} alt="" />
+                <div class ="photo">
+                    
+                    <img src={woodStock}alt="woodStock" />
+                    <div class="content">
+                        <h2>WoodStock AI</h2>
+                        <p1>AI agent that can</p1>
+                    </div>
+                    
+                </div>
+
+                <div class ="photo">
+                    <img src={tylersMaze}alt="woodStock" />
+                    <div class="content">
+                        <h2>Tylers Maze</h2>
+                        <p1>Top view puzzel game</p1>
+                    </div>
+                </div>
+                
+
             </div>
         </div>
 

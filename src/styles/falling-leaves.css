@@ -1,6 +1,7 @@
 
 
 .falling-leaves {
+  
   position: relative;
   top: 0;
   bottom: 0;
@@ -11,6 +12,9 @@
   background: url(https://i.pinimg.com/736x/84/5f/07/845f0702c5216f17e0adfad430c0e805.jpg);
   background-size: cover;
   overflow: hidden;
+
+  width: 400px;
+  height: 400px;
 }
 
 .leaf-scene {
@@ -27,11 +31,16 @@
       left: 0;
       width: 20px;
       height: 20px;
-      background: url(../images/leaf.png) no-repeat;
+      background: url(../assets/images/leaf.png) no-repeat;
       background-size: 100%;
       transform-style: preserve-3d;
       backface-visibility: visible;
     }
+  }
+
+  #intro-simulation{
+    width: 300px;
+
   }
 
   

@@ -27,8 +27,8 @@ function App() {
         <Projects/>
         <Credits/>
         <div id="credits">
-            <p1>Created and Design by Isaiah Santamaria</p1>
-            <p1>All rights reserved. ©</p1>
+            <p1>Created and Design by Isaiah Santamaria: All rights reserved. ©</p1>
+          
         </div>
       </div>
 
