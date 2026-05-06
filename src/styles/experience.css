@@ -1,0 +1,45 @@
+
+#experience{
+    width: 80%;
+    max-width: 1000px;
+    height: 70vh;
+    padding: 50px 20px 0;
+}
+
+h6{
+    color: var(--secondary-dark);
+}
+
+#experienceContent{
+    display:flex;
+    
+    gap: 30px;
+
+}
+#experienceBlock{
+    width: 500px;
+
+}
+#experience img{
+    width: 300px;
+    border-radius: 20px;
+}
+
+li{
+    margin: 20px;
+}
+
+@media screen and (max-width: 800px){
+    #experience img{
+        display: none;
+    }
+    
+    #experienceContent{
+        display: block;
+    }
+
+}
+
+
+
+

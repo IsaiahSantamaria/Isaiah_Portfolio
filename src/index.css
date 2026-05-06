@@ -13,6 +13,10 @@ body {
   color: var(--secondary);
 }
 
+strong{
+  color: var(--safety-orange);
+}
+
 h1{
   font-size: 2.5rem;
 }
@@ -20,4 +24,13 @@ h1{
 #root {
   
 }
+
+@media screen and (max-width: 400){
+  h1{
+    font-size: 1rem;
+  }
+
+}
+
+
 

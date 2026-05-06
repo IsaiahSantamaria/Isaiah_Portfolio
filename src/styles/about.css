@@ -5,8 +5,10 @@
     height: 100vh;
     display:flex;
     justify-content: center;
+    align-items:center;
     padding: 50px 20px 0;
     flex-direction: column;
+    gap: 30px;
    
 }
 
@@ -14,10 +16,17 @@
     
 }
 
+#aboutBottom{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
 #aboutTop{
-    width:100%;
     
-    height: 100%;
+    
+    
     display:flex;
     justify-content: center;
     gap: 5vw;
@@ -27,7 +36,19 @@
 #aboutButtons{
 
     display:flex;
+    
     gap: 20px;
+}
+.card-content{
+    display:flex;
+    flex-direction:row;
+    gap: 20px;
+}
+
+.card-title{
+    font-size: 1.5em;
+    font-weight: bold;
+    color:var(--secondary);
 }
 
 #sayHi{
@@ -48,21 +69,7 @@
 
 }
 
-#schedule{
-    padding: 1em 1em;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    cursor: pointer;
-    color: var(--primary);
-    transition: all 1000ms;
-    
-    position: relative;
-    overflow: hidden;
-    background-color: var(--secondary);
-}
+
 
 #introPhoto{
     width:100%;
@@ -87,44 +94,32 @@ button{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
-    
-    
-}
-
-#stackCards .card{
-    border-radius: 15px;
-    border: 2px solid var(--secondary);
-    background-color: var(--primary-light);
-    width: 180px;
-    height: 80px;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    gap:1vh;
+    gap: 20px;  
 }
 
 .card img{
     border-radius: 10px;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 }
 
-#stackCards .card:hover{
+.card{
     background-color: var(--primary-dark);
+    border: 2px solid var(--secondary);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 
 
-@media screen and (max-width: 800px ){
-
-    #introPhoto{
-        display:none;
+@media screen and (max-width: 1000px){
+    #introPhoto img{
+        display: none;
     }
 
-    
 
 
 }
+
 
 

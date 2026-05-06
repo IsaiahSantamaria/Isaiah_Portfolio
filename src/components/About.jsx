@@ -32,15 +32,21 @@ const About = () =>{
                 <div id="aboutBlock">
                     <h1>$: About Me</h1>
                     <section>
-                        <p><strong>Interest</strong></p>
-                        <p>y plans for this year is bettering my 
-                            skills in web development(Front-end and back-end),  
-                            familarize myself with DevOps tools like  
-                            AWS and Docker, research LLMs and most importantly..... develop video games!</p>
+                        <p><i>Interest</i></p>
+                        <p>
+                            I just love building projects and learning new technologies. 
+                            Nothing makes me happier than seeing others users use and play 
+                            around with my creations. As of rightnow, I am currently familiarizing 
+                            myself with <strong>DevOps/Cloud</strong>, <strong>Game engines/tools</strong>,
+                             and <strong>Web Development</strong>. 
+                        </p>
                     </section>
                     <section>
-                        <p><strong>Hobbies</strong></p>
-                        <p>For indoors, I like to draw, watch anime and sometimes play video games. When it is nice out, I like to go on walks and play pickup basketball</p>
+                        <p><i>Hobbies</i></p>
+                        <p> For indoors, I like to draw, watch anime and sometimes
+                            play video games. When it is nice out, I like to go on after
+                            walks and play pickup basketball
+                        </p>
                     </section>
                     <div id="aboutButtons">
                         <button id="git_btn">
@@ -61,69 +67,36 @@ const About = () =>{
             </div>
 
             <div id="aboutBottom">
-                <h1>
-                    Technologies I've used
-                </h1>
+                <h2>Technologies I've used</h2>
                 <div id="stackCards">
                     <div class="card">
-                        <img src={js} alt="JavaScript" />
-                        <div class="name">
-                            <h4>JavaScript</h4>
+                        <h3 class="card-title">Backend</h3>
+                        <div class="card-content" >
+                            <img src={nodeJS} alt="nodeJS" />
+                            <img src={java} alt="java" />
                         </div>
                     </div>
                     <div class="card">
-                        <img src={java} alt="java" />
-                        <div class="name">
-                            <h2>Java</h2>
-                        </div>
+                        <h3 class="card-title">Frontend</h3>
+                        <div class="card-content" >
+                            <img src={js} alt="JavaScript" />
+                            <img src={tailwind} alt="Tailwind CSS" />
+                            <img src={bootstrap} alt="Bootstrap" />
+                        </div >
                     </div>
                     <div class="card">
-                        <img src={tailwind} alt="tailwind" />
-                        <div class="name">
-                            <h3>Tailwind</h3>
+                        <h3 class="card-title">DevOps/Cloud</h3>
+                        <div class="card-content">
+                            <img src={n8n} alt="n8n" />
+                            <img src={ollama} alt="Ollama"/>
+                            <img src={elastic} alt="Elastic" />
+                            <img src={git} alt="Git" />
                         </div>
                     </div>
-                    <div class="card">
-                        <img src={bootstrap} alt="bootstrap" />
-                        <div class="name">
-                            <h3>Bootstrap</h3>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src={git} alt="git" />
-                        <div class="name">
-                            <h2>Git</h2>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src={elastic} alt="ollama" />
-                        <div class="name">
-                            <h3>Elastic</h3>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src={n8n} alt="ollama" />
-                        <div class="name">
-                            <h2>n8n</h2>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src={ollama} alt="ollama" />
-                        <div class="name">
-                            <h3>Ollama</h3>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src={nodeJS} alt="nodeJS" />
-                        <div class="name">
-                            <h3>NodeJS</h3>
-                        </div>
-                    </div>
+
                 </div>
-
-
-            </div>
-            
+                
+            </div> 
         </div>      
     )
 }
