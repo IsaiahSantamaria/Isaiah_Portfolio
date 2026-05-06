@@ -4,29 +4,35 @@ import woodStock from "../assets/images/woodStock.png"
 import tylersMaze from "../assets/images/tylersMaze.png"
 
 
-const track = document.getElementById('gallery');
-let scrollAmount = 0;
 
-function autoScroll() {
-  const slideWidth = track.clientWidth; // Get width of one image
-  scrollAmount += slideWidth;
 
-  // Reset to start if at the end
-  if (scrollAmount >= track.scrollWidth) {
-    scrollAmount = 0;
-  }
-
-  track.scrollTo({
-    left: scrollAmount,
-    behavior: 'smooth'
-  });
-}
-
-// Scroll every 3 seconds
-setInterval(autoScroll, 10000);
 
 
 const Projects = () =>{
+
+    const track = document.getElementById('gallery');
+
+    let scrollAmount = 0;
+
+    function autoScroll() {
+        const slideWidth = track.clientWidth; // Get width of one image
+        scrollAmount += slideWidth;
+
+        // Reset to start if at the end
+        if (scrollAmount === track.scrollWidth) {
+          scrollAmount = 0;
+        }   
+        track.scrollTo({
+          left: scrollAmount,
+          behavior: 'smooth'
+        });
+
+
+    }
+
+    // Scroll every 3 seconds
+    setInterval(autoScroll, 10000);
+
     return (
         <div id="projects">
             <h1>
@@ -39,7 +45,8 @@ const Projects = () =>{
                     <img src={woodStock}alt="woodStock" />
                     <div class="content">
                         <h2>WoodStock AI</h2>
-                        <p1>AI agent that can</p1>
+                        <p>AI agent that can</p>
+                        <p>n8n</p>
                     </div>
                     
                 </div>
@@ -48,7 +55,8 @@ const Projects = () =>{
                     <img src={tylersMaze}alt="woodStock" />
                     <div class="content">
                         <h2>Tylers Maze</h2>
-                        <p1>Top view puzzel game</p1>
+                        <p>Top view puzzel game</p>
+                        <p>construct 3</p>
                     </div>
                 </div>
                 
