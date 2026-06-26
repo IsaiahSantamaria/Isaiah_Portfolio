@@ -1,7 +1,6 @@
-import "../styles/intro.css";
+import "./Intro.css";
 import Simulation from './LeafSimulation.jsx'
-import heroImg from '../assets/hero.png'
-import me from '../assets/me.png'
+
 
 
 const Intro = () => {
@@ -17,11 +16,11 @@ const Intro = () => {
                 </p>
 
                 <div id="buttons">
-                    <button id="sayHi">
+                    <button id="sayHi" className="border border-2 border-sky-200 hover:bg-zinc-800">
                         Say hello
                     </button>
 
-                    <button id="schedule">
+                    <button id="schedule" className="border border-2 border-sky-200 hover:bg-zinc-800">
                         Schedule a meet
                     </button>
 

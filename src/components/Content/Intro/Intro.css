@@ -1,4 +1,4 @@
-@import "global.css";
+@import "tailwindcss";
 #intro{
     width:100%;
     max-width: 1000px;
@@ -22,7 +22,7 @@
     gap: 20px;
 }
 
-#sayHi{
+#sayHi, #schedule{
     padding: 1em 1em;
     border: none;
     border-radius: 5px;
@@ -30,41 +30,19 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     cursor: pointer;
-    color: var(--primary);
+    
     transition: all 200ms;
     
     position: relative;
     overflow: hidden;
-    background-color: var(--safety-orange);
+   
 
 
 }
 
-#sayHi:hover{
-    background-color: var(--dark-orange);
 
-}
 
-#schedule:hover{
-    background-color: var(--secondary-dark);
 
-}
-
-#schedule{
-    padding: 1em 1em;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    cursor: pointer;
-    color: var(--primary);
-    transition: all 200ms;
-    
-    position: relative;
-    overflow: hidden;
-    background-color: var(--secondary);
-}
 
 @media screen and (max-width: 800px){
     #intro{

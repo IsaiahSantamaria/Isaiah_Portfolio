@@ -1,36 +1,30 @@
-@import "styles/global.css";
+/*this css controls the style of the actual webpage*/
+@import "tailwindcss";
+@import './styles/global.css';
 
-body {
-  margin: 0;
-  min-height: 100vh;
-  /*main style*/
-  font-family: "Google Sans Code", monospace;
+body{
+
+  background-color: var(--background-dark);
+  color: var(--font-dark);
+
+  /*main font style -> playfair display -> weight 400-500*/
+  font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
-  font-variation-settings:"MONO" 1;
-  background-color: var(--primary);
-  color: var(--secondary);
-}
 
-strong{
-  color: var(--safety-orange);
-}
-
-h1{
-  font-size: 2.5rem;
-}
-
-#root {
+  /*centering everything*/
   
-}
+  
+  width:100%;
 
-@media screen and (max-width: 400){
-  h1{
-    font-size: 1rem;
-  }
-
+ 
 }
 
 
+@media screen and (min-width: 1920px){
+    body{
+      padding: 0px 0px 0px 0px;
+    }
 
+}
