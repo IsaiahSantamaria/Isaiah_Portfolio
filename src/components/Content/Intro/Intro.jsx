@@ -1,5 +1,5 @@
 import "./Intro.css";
-import Simulation from './LeafSimulation.jsx'
+import Simulation from './Simulation/Simulation.jsx'
 
 
 
@@ -8,8 +8,8 @@ const Intro = () => {
         <div id="intro">
             <Simulation/>
             <div id="introBlock">
-                <h1> Hello, it's Isaiah</h1>
-                <p>I am a rising <strong><u>Software Developer</u></strong> and artist. 
+                <h1 id="intro_name" className=""> Hello, it's Isaiah</h1>
+                <p className="text-lg">I am a rising <strong><u>Software Developer</u></strong> and artist. 
                     I am based in  Albany, NY and currently 
                     attending Siena Univeristy for my  Bachelors
                      In Computer Science
