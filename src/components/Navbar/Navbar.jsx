@@ -1,6 +1,16 @@
 import "./Navbar.css";
 
-
+const navLinks = {
+    //pages
+    home: {label: 'Home', path:''},
+    about:{label: 'About', path: '/'},
+    
+    //outside links
+    github :{ label: 'Github', path: ''},
+    linkedin:{ label: 'LinkedIn', path: ''},
+    instagram:{label: 'Instagram', path:''},
+    email:{ label: 'Email', path: ''},
+}
 
 const Navbar = () => {
     return (

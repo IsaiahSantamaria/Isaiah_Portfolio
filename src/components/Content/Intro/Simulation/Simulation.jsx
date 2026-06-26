@@ -56,7 +56,7 @@ function Simulation() {
   };
 
   return (
-    <div ref={root}>
+    <div ref={root} className="border-4 w-[350px] h-[500px]">
       <div className="large centered row">
         <img src={reactLogo} className="logo react" alt="React logo" />
       </div>
