@@ -9,19 +9,19 @@ const Intro = () => {
             <Simulation/>
             <div id="introBlock">
                 <Name/>
-                <p>I am a rising <strong><u>DevSecOps Engineer</u></strong> and artist. 
-                    I am based in  Albany, NY and currently 
+                <p>I am a rising <strong>DevSecOps Engineer</strong> and artist. 
+                    I am based in  <u><a target="_blank" href="https://google.com/search?q=Albany, New York ">Albany, NY</a></u> and currently 
                     attending Siena Univeristy for my  Bachelors
                     In Computer Science. I have a strong interest in creating 
                     applications, platforms and games!
                 </p>
 
-                <div id="buttons">
-                    <button id="sayHi" className="border border-2 border-sky-200 hover:bg-zinc-800">
+                <div id="buttons" className="flex gap-4">
+                    <button id="say_hi" className="border border-3 border-sky-300 hover:bg-zinc-800">
                         Say hello
                     </button>
 
-                    <button id="schedule" className="border border-2 border-sky-200 hover:bg-zinc-800">
+                    <button id="schedule" className="border border-3 border-sky-300 hover:bg-zinc-800">
                         Schedule a meet
                     </button>
 

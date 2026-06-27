@@ -20,7 +20,9 @@ body{
 
 
 
-
+strong{
+  color:var(--bright-font-dark);
+}
 p{
   font-size: 1.3em;
 }

@@ -17,13 +17,12 @@
     width: 37vw;
 }
 
-
 #buttons{
     display:flex;
     gap: 20px;
 }
 
-#sayHi, #schedule{
+#say_hi, #schedule{
     padding: 1em 1em;
     border: none;
     border-radius: 5px;
@@ -31,9 +30,6 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     cursor: pointer;
-    
-
-   
 
 }
 
