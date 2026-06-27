@@ -10,5 +10,5 @@ export default defineConfig({
     react(),
     babel({ presets: [reactCompilerPreset()] })
   ],
-  base: "https://isaiahsantamaria.github.io/Isaiah_Portfolio/",
+  base: "https://github.com/IsaiahSantamaria/Isaiah_Portfolio",
 })
