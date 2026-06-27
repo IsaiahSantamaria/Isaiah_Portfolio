@@ -1,6 +1,6 @@
 import "./Intro.css";
 import Simulation from './Simulation/Simulation.jsx'
-
+import Name from './Name/Name.jsx'
 
 
 const Intro = () => {
@@ -8,11 +8,12 @@ const Intro = () => {
         <div id="intro">
             <Simulation/>
             <div id="introBlock">
-                <h1 id="intro_name" className=""> Hello, it's Isaiah</h1>
-                <p className="text-lg">I am a rising <strong><u>Software Developer</u></strong> and artist. 
+                <Name/>
+                <p>I am a rising <strong><u>DevSecOps Engineer</u></strong> and artist. 
                     I am based in  Albany, NY and currently 
                     attending Siena Univeristy for my  Bachelors
-                     In Computer Science
+                    In Computer Science. I have a strong interest in creating 
+                    applications, platforms and games!
                 </p>
 
                 <div id="buttons">

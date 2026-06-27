@@ -14,7 +14,7 @@
 
 #introBlock{
     padding-right: 25px;
-    width: 475px;
+    width: 37vw;
 }
 
 
@@ -32,10 +32,7 @@
     text-transform: uppercase;
     cursor: pointer;
     
-    transition: all 200ms;
-    
-    position: relative;
-    overflow: hidden;
+
    
 
 }

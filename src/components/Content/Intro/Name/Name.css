@@ -1,0 +1,15 @@
+@import '../../../../styles/global.css';
+text{
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+    font-weight: 500;
+    fill: var(--background-dark);
+}
+
+g{
+    stroke: var(--bright-font-dark);
+}
+
+#name-text{
+  stroke: #74d4e6;
+}

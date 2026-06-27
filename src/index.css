@@ -10,17 +10,20 @@ body{
   /*main font style -> playfair display -> weight 400-500*/
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 
   /*centering everything*/
   
-  
   width:100%;
-
- 
 }
 
+
+
+
+p{
+  font-size: 1.3em;
+}
 
 @media screen and (min-width: 1920px){
     body{

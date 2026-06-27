@@ -13,7 +13,7 @@ function Simulation() {
     scope.current = createScope({ root }).add( self => {
     
       // Every Anime.js instance declared here is now scoped to <div ref={root}>
-
+      
       // Created a bounce animation loop
       animate('.logo', {
         scale: [
@@ -23,12 +23,12 @@ function Simulation() {
         loop: true,
         loopDelay: 250,
       });
-      
+      /**
       // Make the logo draggable around its center
       createDraggable('.logo', {
         container: [0, 0, 0, 0],
         releaseEase: spring({ bounce: .7 })
-      });
+      });*/
 
       // Register function methods to be used outside the useEffect
       self.add('rotateLogo', (i) => {
