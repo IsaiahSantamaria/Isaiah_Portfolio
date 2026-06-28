@@ -1,9 +1,34 @@
+import React from 'react';
+import { animate, createScope, spring, createDraggable } from 'animejs';
+//import { useNavigate } from 'react-router-dom';
+
 import "./Intro.css";
 import Simulation from './Simulation/Simulation.jsx'
 import Name from './Name/Name.jsx'
 
 
 const Intro = () => {
+
+  //  const navigate = useNavigate();
+    
+    const navLinks = {
+        email: {label: 'Email', path:'mailto:isaiahasant@gmail.com'},
+        schedule:{label: 'Schedule', path:'https://cal.com/isaiah-santamaria-v78bjr'} 
+    }
+
+    
+
+    const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms)); //use slow down action to play animation before navigating
+    const openLink = async (e, link) => {
+        await animate(e.currentTarget, {
+            scale:[1,1.25,1]
+        }).finished;
+
+        await sleep(500);
+
+        window.open(link, "_blank");
+    };
+
     return(
         <div id="intro">
             <Simulation/>
@@ -17,14 +42,19 @@ const Intro = () => {
                 </p>
 
                 <div id="buttons" className="flex gap-4">
-                    <button id="say_hi" className="border border-3 border-sky-300 hover:bg-zinc-800">
+                    <button id="say_hi" 
+                            className="border border-3 border-sky-300 hover:bg-zinc-800"
+                            onClick={(e)=> openLink(e,navLinks.email.path)}
+                            >
                         Say hello
                     </button>
 
-                    <button id="schedule" className="border border-3 border-sky-300 hover:bg-zinc-800">
+                    <button id="schedule" 
+                            className="border border-3 border-sky-300 hover:bg-zinc-800"
+                            onClick={(e) => openLink(e,navLinks.schedule.path)}
+                            >
                         Schedule a meet
                     </button>
-
                 </div>
             </div>
         </div>       

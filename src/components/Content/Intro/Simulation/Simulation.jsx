@@ -1,70 +1,72 @@
-import { animate, createScope, spring, createDraggable } from 'animejs';
+import { animate, stagger} from 'animejs';
 import { useEffect, useRef, useState } from 'react';
 import reactLogo from './react.svg';
 import './Simulation.css';
 
+const WaterDropGrid = () =>{
+
+};
+
+const GRID_WIDTH = 25;
+const GRID_HEIGHT = 25;
+
+
+
 function Simulation() {
-  const root = useRef(null);
-  const scope = useRef(null);
-  const [ rotations, setRotations ] = useState(0);
 
-  useEffect(() => {
-  
-    scope.current = createScope({ root }).add( self => {
-    
-      // Every Anime.js instance declared here is now scoped to <div ref={root}>
-      
-      // Created a bounce animation loop
-      animate('.logo', {
-        scale: [
-          { to: 1.25, ease: 'inOut(3)', duration: 200 },
-          { to: 1, ease: spring({ bounce: .7 }) }
+  //animation when button is clicked
+  const containerRef = useRef(null);
+
+
+  const handleDotClick = (e) => {
+    const dot = e.currentTarget.querySelector(".dot-point");
+    const allDots = containerRef.current.querySelectorAll(".dot-point")
+    console.log(dot);
+    animate(allDots, {
+        keyframes: [
+            { scale: 1.35, y: -15, opacity: 1, duration: 250, ease: "outSine" },
+            { scale: 1, y: 0, opacity: 0.5, duration: 500, ease: "inOutQuad" },
         ],
-        loop: true,
-        loopDelay: 250,
-      });
-      /**
-      // Make the logo draggable around its center
-      createDraggable('.logo', {
-        container: [0, 0, 0, 0],
-        releaseEase: spring({ bounce: .7 })
-      });*/
-
-      // Register function methods to be used outside the useEffect
-      self.add('rotateLogo', (i) => {
-        animate('.logo', {
-          rotate: i * 360,
-          ease: 'out(4)',
-          duration: 1500,
-        });
-      });
-
+        delay:stagger(100),
     });
+};
 
-    // Properly cleanup all Anime.js instances declared inside the scope
-    return () => scope.current.revert()
 
-  }, []);
+  const dots = [];
+  let index = 0;
+  
+  
+  //generating the number of dots being displayed
+  for(let i=0; i < GRID_WIDTH;i++){
+    for(let j= 0; j < GRID_HEIGHT; j++){
+      dots.push(
+        <div 
+          
+          onClick={handleDotClick}
+          className="group cursor-crosshair rounded-full p-2 transition-colors hover:bg-slate-600"
+          data-index={index}
+          key={`${i}-${j}`}
+        >
+          <div 
+            className="dot-point h-2 w-2 rounded-full bg-gradient-to-b from-slate-700 to-slate-500 opacity-50 group-hover:from-indigo-600 group-hover:to-white"
+            data-index={index}
+            >
+            
+          </div>
+        </div>
 
-  const handleClick = () => {
-    setRotations(prev => {
-      const newRotations = prev + 1;
-      // Animate logo rotation on click using the method declared inside the scope
-      scope.current.methods.rotateLogo(newRotations);
-      return newRotations;
-    });
-  };
-
+      )
+      
+    }
+  }
+  
   return (
-    <div ref={root} className="border-4 w-[350px] h-[500px]">
-      <div className="large centered row">
-        <img src={reactLogo} className="logo react" alt="React logo" />
-      </div>
-      <div className="medium row">
-        <fieldset className="controls">
-        <button onClick={handleClick}>rotations: {rotations}</button>
-        </fieldset>
-      </div>
+    <div 
+      ref={containerRef} 
+      style={{gridTemplateColumns: `repeat(${GRID_WIDTH},1fr)`}} 
+      className=" grid w-fit  border-4 hover:border-sky-100"
+      >
+      {dots}
     </div>
   )
 }
