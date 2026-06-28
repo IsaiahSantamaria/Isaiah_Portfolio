@@ -8,25 +8,23 @@ import Name from './Name/Name.jsx'
 
 
 const Intro = () => {
-
-  //  const navigate = useNavigate();
-    
+    //objects
     const navLinks = {
         email: {label: 'Email', path:'mailto:isaiahasant@gmail.com'},
         schedule:{label: 'Schedule', path:'https://cal.com/isaiah-santamaria-v78bjr'} 
     }
 
-    
-
+    //responsible for making component sleep before playing button animations
     const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms)); //use slow down action to play animation before navigating
+  
+    
+    //function responsible for navigating to link 
     const openLink = async (e, link) => {
         await animate(e.currentTarget, {
-            scale:[1,1.25,1]
+            scale:[1,1.25,1] //animation
         }).finished;
-
-        await sleep(500);
-
-        window.open(link, "_blank");
+        await sleep(500); //waits 5 miliseconds
+        window.open(link, "_blank"); //opens link
     };
 
     return(

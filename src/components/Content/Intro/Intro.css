@@ -2,18 +2,16 @@
 @import "../../../styles/global.css";
 #intro{
     width:100%;
-
     height: 70vh;
     display:flex;
     justify-content:center;
     align-items:center;
     padding: 0px 20px 10px 20px;
-    gap: 10vw;
+    gap: 8vw;
    
 }
 
 #introBlock{
-    padding-right: 25px;
     width: 37vw;
 }
 
