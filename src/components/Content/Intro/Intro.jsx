@@ -29,7 +29,9 @@ const Intro = () => {
 
     return(
         <div id="intro">
-            <Simulation/>
+            <div id="simulation_control">
+                <Simulation/>
+            </div>
             <div id="introBlock">
                 <Name/>
                 <p>I am a rising <strong>DevSecOps Engineer</strong> and artist. 

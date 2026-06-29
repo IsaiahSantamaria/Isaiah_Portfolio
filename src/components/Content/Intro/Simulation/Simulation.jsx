@@ -10,8 +10,8 @@ import { OrbitControls } from '@react-three/drei'
 //styles
 import './Simulation.css';
 
-const GRID_WIDTH = 20;
-const GRID_HEIGHT = 26;
+let GRID_WIDTH = 20;
+let GRID_HEIGHT = 26;
 function Simulation() {
   //animation when button is clicked
   const containerRef = useRef(null);
@@ -24,9 +24,9 @@ function Simulation() {
 
     animate(allDots, {
       keyframes: [
-            {scale: 1.15, duration: 250, ease:"outSine"},
+            {scale: 1.10, duration: 250, ease:"outSine"},
             {scale: 1, duration:500, ease:"outInOutQuad"},
-            {y: -10, duration: 250, ease:"outSine"},
+            {y: -5, duration: 250, ease:"outSine"},
             {y: 0, duration:500, ease:"outInOutQuad"},
             {opacity: 1, duration: 250, ease:"outSine"},
             {opacity: 1.5, duration:500, ease:"outInOutQuad"},
@@ -52,7 +52,7 @@ function Simulation() {
           key={`${i}-${j}`}
         >
           <div 
-            className="dot-point h-2 w-2 rounded-full bg-gradient-to-b from-slate-700 to-slate-500 opacity-50 "
+            className="dot-point h-2 w-2  rounded-full bg-gradient-to-b from-slate-700 to-slate-500 opacity-50 "
             data-index={index}
             >
           </div>
@@ -70,12 +70,16 @@ function Simulation() {
       className=" relative grid w-fit  border-4 hover:border-sky-100"
       >
       {dots}
-      <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
-        <Canvas camera={{ position: [0,0,5], fov: 60}}>
+      <div className="absolute inset-0 flex justify-center items-center pointer-events-none ">
+        <Canvas camera={{ position: [0,4,5], fov: 45}}>
            <ambientLight intensity={1} />
             <directionalLight position={[5, 5, 5]} intensity={2} />
             <Model/>
-            <OrbitControls/>
+            <OrbitControls
+              autoRotate={true}
+              autoRotateSpeed={3.0}
+              enableDamping={true}
+            />
         </Canvas>
       </div>
       

@@ -10,7 +10,7 @@ const Model = () => {
   const gltf = useLoader(GLTFLoader,  `${import.meta.env.BASE_URL}models/donut.glb`);
   return (
     <>
-      <primitive object={gltf.scene} scale={5} />
+      <primitive object={gltf.scene} scale={8} />
     </>
   );
 };

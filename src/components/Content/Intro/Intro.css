@@ -32,20 +32,18 @@
 }
 
 @media screen and (max-width: 800px){
-    #intro{
-        flex-direction:column ;
-    }
-
+  
     #buttons{
         display: none;
     }
-    #introSimulation img{
-        width: 200px;
-        height: 200px;
+
+    #simulation_control{
+        display:none;
     }
-
-
+    #introBlock{display:none;}
 }
+
+
 
 #intro_name{
     font-size: 3.75rem;
