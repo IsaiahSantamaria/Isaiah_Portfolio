@@ -4,7 +4,8 @@ import { useEffect, useRef,Suspense} from 'react';
 
 //importing 3d model
 import { Canvas } from "@react-three/fiber";
-import Model from "./TheeModel/ThreeModel.jsx";
+import Model from "./Model/Model.jsx";
+import { OrbitControls } from '@react-three/drei'
 
 //styles
 import './Simulation.css';
@@ -70,13 +71,12 @@ function Simulation() {
       >
       {dots}
       <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
-        <Canvas className="w-full h-full">
-          <ambientLight intensity={2}/>
-          <directionalLight position={[5, 5, 5]} intensity={2} />
-          <Suspense fallback={null}><Model/></Suspense>
-          
+        <Canvas camera={{ position: [0,0,5], fov: 60}}>
+           <ambientLight intensity={1} />
+            <directionalLight position={[5, 5, 5]} intensity={2} />
+            <Model/>
+            <OrbitControls/>
         </Canvas>
-      
       </div>
       
     </div>

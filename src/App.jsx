@@ -17,7 +17,7 @@ function App() {
   return (
     <div >
       <Navbar/>
-      <div id="content" class ="">
+      <div id="content" className="">
         <Intro/>
       </div>
 
