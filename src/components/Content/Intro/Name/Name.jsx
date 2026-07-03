@@ -19,7 +19,7 @@ const Name = () => {
     }, []);
     return(
         <div className="docs-demo-html">
-          <svg viewBox="0 0 404 80">
+          <svg viewBox="0 0 404 70">
             <g id="intro-text" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                 <text
                     className="line Name"
@@ -33,7 +33,6 @@ const Name = () => {
                     y="60">
                     Hello, it's
                 </text>
-                
             </g>
             <g  id="name-text" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                 <text
@@ -43,7 +42,6 @@ const Name = () => {
                     Isaiah
                 </text>
             </g>
-            
           </svg>
         </div>
 

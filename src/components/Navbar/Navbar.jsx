@@ -18,7 +18,7 @@ const navLinks = {
 const Navbar = () => {
     return (
         
-        <div id="navbar " className="" >
+        <div id="nav " className="" >
             <nav className="border-b-2 border-b-sky-300 pl-[10vw] pr-[10vw]">
                 <div id="navbar_left" className="navbar-left flex ">
                     <a href="" ><ul className="max-[500px]:text-sm">Isaiah</ul></a>
@@ -26,12 +26,16 @@ const Navbar = () => {
                     <a href={navLinks.experience.path} target="_blank" ><ul className="max-[500px]:text-sm">Experience</ul></a>
                     <a href="" ><ul className="max-[500px]:text-sm">Projects</ul></a>
                 </div>
-                <div id="navbar_right" className="navbar-right flex gap-[15px]">
+                <div id="navbar_right" className="flex gap-[15px]">
                     <a href={navLinks.github.path} target="_blank"><ul class ="fa-brands fa-github"></ul></a>
                     <a href={navLinks.linkedin.path} target="_blank"><ul class="fa-brands fa-linkedin"></ul></a>
                     <a href={navLinks.instagram.path} target="_blank"><ul class="fa-brands fa-instagram"> </ul></a>
                     <a href={navLinks.email.path} target="_blank"><ul class="fa-regular fa-envelope"></ul></a>
                 </div>
+
+                <div id="SideNavbar"></div>
+
+        
             </nav>
         </div>
         

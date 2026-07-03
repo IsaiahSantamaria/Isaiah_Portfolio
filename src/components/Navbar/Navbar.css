@@ -19,5 +19,26 @@ nav{
     padding-top:10px;
 }
 
+#SideNavbar{
+
+    
+}
+
+
+@media screen and (max-width: 800px){
+    
+
+    #navbar_left,#navbar_right {
+        display:none;
+        
+    }
+
+
+    nav{
+        justify-content:center;
+    }
+
+
+}
 
 

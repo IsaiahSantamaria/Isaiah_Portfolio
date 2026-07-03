@@ -23,8 +23,16 @@ body{
 strong{
   color:var(--bright-font-dark);
 }
+
 p{
-  font-size: 1.3em;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 800px){
+  p{
+    font-size:.8rem;
+  }
+
 }
 
 @media screen and (min-width: 1920px){

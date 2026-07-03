@@ -6,7 +6,7 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    padding: 0px 20px 10px 20px;
+    padding: 0px 20px 0px 20px;
     gap: 8vw;
    
 }
@@ -17,7 +17,7 @@
 
 #buttons{
     display:flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 #say_hi, #schedule{
@@ -32,15 +32,34 @@
 }
 
 @media screen and (max-width: 800px){
-  
-    #buttons{
-        display: none;
+    #intro{
+        flex-direction: column;
     }
 
-    #simulation_control{
-        display:none;
+    #introBlock{
+    width: 80vw;
     }
-    #introBlock{display:none;}
+
+    #say_hi, #schedule{
+    padding: .5em .5em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    }
+
+    #name_controller{
+        width:80vw;
+        height:15vw;
+    }
+
+    #intro{
+        height:90vh;
+    }
+
+ 
 }
 
 
