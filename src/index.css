@@ -19,7 +19,15 @@ body{
 }
 
 
-
+a{
+  cursor: pointer;
+}
+button{
+  cursor: pointer;
+}
+ul{
+  cursor: pointer;
+}
 strong{
   color:var(--bright-font-dark);
 }
