@@ -1,5 +1,6 @@
 import "./Navbar.css";
 
+
 const navLinks = {
     //pages
     home: {label: 'Home', path:'/'},
@@ -16,9 +17,8 @@ const navLinks = {
 }
 
 const Navbar = () => {
-    return (
-        
-        <div id="nav " className="" >
+    return (  
+        <div id="nav" className="" >
             <nav className="border-b-2 border-b-sky-300 pl-[10vw] pr-[10vw]">
                 <div id="navbar_left" className="navbar-left flex ">
                     <a href="" ><ul className="max-[500px]:text-sm">Isaiah</ul></a>
@@ -32,10 +32,21 @@ const Navbar = () => {
                     <a href={navLinks.instagram.path} target="_blank"><ul class="fa-brands fa-instagram"> </ul></a>
                     <a href={navLinks.email.path} target="_blank"><ul class="fa-regular fa-envelope"></ul></a>
                 </div>
+                <div id="" className="mobileNavbar flex ">
+                    <button><i className="fa-solid fa-bars fa-2x hover:text-slate-600 "></i></button>
+                    <ul className ="hidden">
+                        <li><a href="" ><ul className="max-[500px]:text-sm">Isaiah</ul></a></li>
+                        <li><a href="" ><ul className="max-[500px]:text-sm">About</ul></a></li>
+                        <li><a href={navLinks.experience.path} target="_blank" ><ul className="max-[500px]:text-sm">Experience</ul></a></li>
+                        <li><a href="" ><ul className="max-[500px]:text-sm">Projects</ul></a></li>
+                        <li><a href={navLinks.github.path} target="_blank"><ul class ="fa-brands fa-github"></ul></a></li>
+                        <li><a href={navLinks.linkedin.path} target="_blank"><ul class="fa-brands fa-linkedin"></ul></a></li>
+                        <li><a href={navLinks.instagram.path} target="_blank"><ul class="fa-brands fa-instagram"> </ul></a></li>
+                        <li><a href={navLinks.email.path} target="_blank"><ul class="fa-regular fa-envelope"></ul></a></li>
 
-                <div id="SideNavbar"></div>
-
-        
+                        
+                    </ul>
+                </div>
             </nav>
         </div>
         

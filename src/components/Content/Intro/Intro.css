@@ -2,6 +2,7 @@
 @import "../../../styles/global.css";
 #intro{
     width:100%;
+    min-height:610px;
     height: 70vh;
     display:flex;
     justify-content:center;
@@ -31,7 +32,7 @@
 
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
     #intro{
         flex-direction: column;
     }

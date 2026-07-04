@@ -36,8 +36,8 @@ const Intro = () => {
                     <Name/>
                 </div>
                 <p>I am a rising <strong>DevSecOps Engineer</strong> and artist. 
-                    I am based in  <u><a target="_blank" href="https://google.com/search?q=Albany, New York ">Albany, NY</a></u> and currently 
-                    attending Siena Univeristy for my  Bachelors
+                    I am based in  <u ><a target="_blank" href="https://google.com/search?q=Albany, New York" styles="font-size: .8rem;">Albany, Ny </a></u> and currently 
+                    attending Siena Univeristy for my Bachelors
                     In Computer Science. I have a strong interest in creating 
                     applications, platforms and games!
                 </p>
