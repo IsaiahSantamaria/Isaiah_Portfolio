@@ -1,7 +1,9 @@
 /*this css controls the style of the actual webpage*/
 @import "tailwindcss";
 @import './styles/global.css';
-
+html{
+  scroll-behavior:smooth;
+}
 body{
 
   background-color: var(--background-dark);
@@ -36,31 +38,46 @@ p{
   font-size: 1.3rem;
 }
 
-
-@media screen and (max-width: 400px){
-  p{
-    font-size:.2rem;
-  }
-
-}
-
-@media screen and (max-width: 800px){
-  p{
-    font-size:.8rem;
-  }
-
-}
-
-@media screen and (max-width: 950px){
-  p{
+@media screen and (max-width: 1200px){
+  p,.font_size_control{
     font-size:1rem;
   }
 
 }
 
+
+@media screen and (max-width: 800px){
+  p,.font_size_control{
+    font-size:.8rem;
+  }
+
+}
+
+@media screen and (max-width: 400px){
+  p,.font_size_control{
+    font-size:.5rem;
+  }
+
+}
+
+
+.hoverUpAnim{
+  transition: transform 0.3s ease; /* Smooths the movement */
+}
+
+.hoverUpAnim:hover{
+  transform: translateY(-10px);
+}
+
+
 @media screen and (min-width: 1920px){
     body{
       padding: 0px 0px 0px 0px;
     }
+
+}
+
+.header_container{
+  margin-bottom: 15px;
 
 }

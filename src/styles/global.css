@@ -4,8 +4,9 @@
 
     /*DARK MODE*/
     --background-dark: #111314;
+    --card-background-dark: #12181b;
     --font-dark: #7d8e96;
     --bright-font-dark: #c8dce6;
-    
+    --highlight-dark: #54a6dd;
     
 }

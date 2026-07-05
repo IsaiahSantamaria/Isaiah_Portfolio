@@ -3,10 +3,10 @@ import "./Navbar.css";
 
 const navLinks = {
     //pages
-    home: {label: 'Home', path:'/'},
-    about:{label: 'About', path: '/'},
+    home: {label: 'Home', path:'#intro'},
+    about:{label: 'About', path: 'https://www.linkedin.com/in/isaiahasanta/'},
     experience:{label: 'Experience', path: 'https://docs.google.com/document/d/1MHjsiJQJE25XYcKBKqE9F3zFayM6BubI/edit?usp=sharing&ouid=106151378304154963111&rtpof=true&sd=true'},    
-    projects:{label: 'Projects', path: '/'},
+    projects:{label: 'Projects', path: '#Projects'},
 
 
     //outside links
@@ -18,13 +18,13 @@ const navLinks = {
 
 const Navbar = () => {
     return (  
-        <div id="nav" className="" >
+        
             <nav className="border-b-2 border-b-sky-300 pl-[10vw] pr-[10vw]">
                 <div id="navbar_left" className="navbar-left flex ">
-                    <a href="" ><ul className="max-[500px]:text-sm">Isaiah</ul></a>
-                    <a href="" ><ul className="max-[500px]:text-sm">About</ul></a>
+                    <a href={navLinks.home.path} ><ul className="max-[500px]:text-sm">Isaiah</ul></a>
+                    {/**<a href="" ><ul className="max-[500px]:text-sm">About</ul></a> */}
                     <a href={navLinks.experience.path} target="_blank" ><ul className="max-[500px]:text-sm">Experience</ul></a>
-                    <a href="" ><ul className="max-[500px]:text-sm">Projects</ul></a>
+                    <a href={navLinks.projects.path} ><ul className="max-[500px]:text-sm">Projects</ul></a>
                 </div>
                 <div id="navbar_right" className="flex gap-[15px]">
                     <a href={navLinks.github.path} target="_blank"><ul class ="fa-brands fa-github"></ul></a>
@@ -43,12 +43,10 @@ const Navbar = () => {
                         <li><a href={navLinks.linkedin.path} target="_blank"><ul class="fa-brands fa-linkedin"></ul></a></li>
                         <li><a href={navLinks.instagram.path} target="_blank"><ul class="fa-brands fa-instagram"> </ul></a></li>
                         <li><a href={navLinks.email.path} target="_blank"><ul class="fa-regular fa-envelope"></ul></a></li>
-
-                        
                     </ul>
                 </div>
             </nav>
-        </div>
+        
         
     )
 }

@@ -2,8 +2,8 @@
 @import "../../../styles/global.css";
 #intro{
     width:100%;
-    min-height:610px;
-    height: 70vh;
+    min-height:640px;
+    height: 100vh;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -67,5 +67,14 @@
 
 #intro_name{
     font-size: 3.75rem;
-    color: var(--bright-font-dark)
+    color: var(--bright-font-dark);
+}
+
+.unShown{
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
 }

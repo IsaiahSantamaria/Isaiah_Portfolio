@@ -1,0 +1,17 @@
+@import '../../../../styles/global.css';
+
+.Project{
+    min-width: 300px;
+    width: 100%;
+    max-width: 420px;
+    height: 475px;
+    padding: 10px 10px 5px 10px;
+    border: 3px solid var(--bright-font-dark);
+    border-radius: 8px;
+}
+
+.project_header{
+    color: var(--highlight-dark);
+
+}
+
