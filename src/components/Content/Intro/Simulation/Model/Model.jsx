@@ -11,10 +11,10 @@ import { Canvas } from "@react-three/fiber";
 
 
 const Model = ({size}) => {
-  const gltf = useLoader(GLTFLoader,  `${import.meta.env.BASE_URL}models/donut.glb`);
+  const gltf = useLoader(GLTFLoader,  `${import.meta.env.BASE_URL}models/LaptopTest.glb`);
   return (
     <>
-      
+        <Canvas camera={{ position: [0,2,7], fov: 80}}>
            <ambientLight intensity={1} />
             <directionalLight position={[5, 5, 5]} intensity={2} />
             <primitive object={gltf.scene} scale={size} />
@@ -23,7 +23,7 @@ const Model = ({size}) => {
               autoRotateSpeed={3.0}
               enableDamping={true}
             />
-        
+        </Canvas> 
     </>
   );
 };

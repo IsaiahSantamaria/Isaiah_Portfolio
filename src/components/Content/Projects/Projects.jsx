@@ -20,16 +20,16 @@ const Projects = () =>{
     const ProjectLogs = [
         {id: 1, header: 'Isaiah\'s Porfolio', disc: 'This is my portfolio website where I introduce myself and present my projects', 
             techStack: 'ReactJs, Vite, ThreeJS, animeJS, ', repoLink: 'https://github.com/IsaiahSantamaria/Isaiah_Portfolio',  
-            demolink:'https://isaiahsantamaria.github.io/Isaiah_Portfolio/', srcImg: portfolio},
+            demoLink:'https://isaiahsantamaria.github.io/Isaiah_Portfolio/', srcImg: portfolio},
         {id: 2, header: 'PeanutArch', disc: 'This past summer(2026), I configured and maintained an Archlinux OS on my personal laptop',
             techStack: 'ArchLinux, Hyprland, Bash, CSS', repoLink: 'https://github.com/IsaiahSantamaria/PeanutsArch', 
-            demolink:'https://github.com/IsaiahSantamaria/PeanutsArch', srcImg: peanutsArchImg},
+            demoLink:'https://github.com/IsaiahSantamaria/PeanutsArch', srcImg: peanutsArchImg},
         {id: 3, header: 'Woodstock AI', disc: 'This is my research project introducing drag and drop features to AI development with n8n(Workflow Automation Tool)', 
             techStack: 'n8n, nodeJs, docker, JSON, Ollama, OpenAI',repoLink: 'https://github.com/IsaiahSantamaria/Woodstock-AI', 
-            demolink:'https://github.com/IsaiahSantamaria/Woodstock-AI', srcImg: woodStockAIImg},
+            demoLink:'https://github.com/IsaiahSantamaria/Woodstock-AI', srcImg: woodStockAIImg},
         {id: 4, header: 'Tyler\'s Maze', disc: 'Senior year of High school(2024), I created a 2D top view game heavily inpsired by Undertale and retro-pokemon with Construct3(PC support only)', 
             techStack: 'Construct3, html5', repoLink: 'https://github.com/IsaiahSantamaria/Tyler-s-Maze', 
-            demolink:'https://www.construct.net/en/free-online-games/tylers-maze-71785/play', srcImg: tylersMazeImg},
+            demoLink:'https://www.construct.net/en/free-online-games/tylers-maze-71785/play', srcImg: tylersMazeImg},
     ];
 
     return(

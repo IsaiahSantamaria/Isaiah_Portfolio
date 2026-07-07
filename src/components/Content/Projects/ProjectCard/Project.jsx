@@ -13,8 +13,8 @@ const Project = ({header, img,discription, id, techStack, repoLink, demoLink}) =
                     <h3>{header}</h3>
                     <div className="project_card_links">
                         <strong>
-                            <a href={repoLink}><i class="fa-brands fa-square-github fa-2x"></i></a>
-                            <a href={demoLink}><i class="fa-solid fa-gamepad fa-2x"></i></a>
+                            <a href={repoLink} target="_blank"><i class="fa-brands fa-square-github fa-2x"></i></a>
+                            <a href={demoLink} target="_blank"><i class="fa-solid fa-gamepad fa-2x"></i></a>
                         </strong>
                     </div>
                 </div>
@@ -23,7 +23,7 @@ const Project = ({header, img,discription, id, techStack, repoLink, demoLink}) =
                 </div>
                 <div className="w-full project_content flex flex-col items-center justify-between p-3 gap-4">
                     <p2>{discription}</p2>
-                    <p2>{techStack}</p2>
+                    <p2>Stack: <strong>{techStack}</strong></p2>
                 </div>
                 
             </div>
