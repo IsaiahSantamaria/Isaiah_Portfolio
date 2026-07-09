@@ -1,12 +1,9 @@
 @import '../../../../styles/global.css';
 
-.logo.react {
-  width: 150%;
-  height: 150%;
-}
+
 
 #simulation_container{
-  border: 4px solid var(--bright-font-dark);
+  border: 1px solid var(--bright-font-dark);
   width: 450px;
   height: 500px;
 }

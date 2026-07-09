@@ -41,8 +41,8 @@ const Intro = () => {
                 </div>
                 <FadeInSection>
                     <p>I am a rising <strong>DevSecOps Engineer</strong> and artist. 
-                    I am based in  <u><a target="_blank" href="https://google.com/search?q=Albany, New York" className="font_size_control">Albany, Ny</a></u> and currently 
-                    attending Siena Univeristy for my Bachelors
+                    I am based in  <u><a target="_blank" href="https://google.com/search?q=Albany, New York" className="font_size_control">Albany, NY</a></u> and currently 
+                    attending Siena University for my Bachelors
                     In Computer Science. I have a strong interest in creating 
                     applications, platforms and games!
                     </p>

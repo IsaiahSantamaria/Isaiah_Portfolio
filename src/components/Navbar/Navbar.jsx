@@ -32,6 +32,9 @@ const Navbar = () => {
                     <a href={navLinks.instagram.path} target="_blank"><ul class="fa-brands fa-instagram"> </ul></a>
                     <a href={navLinks.email.path} target="_blank"><ul class="fa-regular fa-envelope"></ul></a>
                 </div>
+                <div className="mobileNavbar" >
+                    <a href={navLinks.home.path} ><ul className="max-[500px]:text-sm">Isaiah</ul></a>
+                </div>
                 <div id="" className="mobileNavbar flex ">
                     <button><i className="fa-solid fa-bars fa-2x hover:text-slate-600 "></i></button>
                     <ul className ="hidden">
