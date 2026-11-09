@@ -22,7 +22,7 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <nav className="border-b-2 border-b-sky-300 pl-[10vw] pr-[10vw]">
+        <nav className="border-b-5 pb-2 border-b-sky-300 pl-[10vw] pr-[10vw]">
             <div id="navbar_left" className="navbar-left flex">
                 <a href={navLinks.home.path}>
                     <ul className="max-[500px]:text-sm">{navLinks.home.label}</ul>
@@ -64,7 +64,7 @@ const Navbar = () => {
 
                     <div
                         id="mobileNavbar_content"
-                        className={`${isMenuOpen ? "flex" : "hidden"} flex-col items-start gap-3 text-left`}
+                        className={`${isMenuOpen ? "flex" : "hidden"} flex-col items-start gap-3 text-left pl-2`}
                     >
                         <a href={navLinks.home.path}>{navLinks.home.label}</a>
                         <a href={navLinks.experience.path} target="_blank" rel="noopener noreferrer">

@@ -22,12 +22,13 @@ function Scene({size}){
   return(
     <Canvas camera={{ position: [0,2,7], fov: 80}}>
       <ambientLight intensity={1} />
-      <directionalLight position={[5, 5, 5]} intensity={2} />
+      <directionalLight position={[5, 5, 7]} intensity={2} />
       <primitive object={model.scene} scale={size} />
       <OrbitControls
         autoRotate={true}
         autoRotateSpeed={3.0}
         enableDamping={true}
+        enableZoom={false}
       />
     </Canvas> 
   )

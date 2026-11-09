@@ -3,7 +3,7 @@
 
 
 #simulation_container{
-  border: 1px solid var(--bright-font-dark);
+  /*border: 1px solid var(--bright-font-dark);*/
   width: 450px;
   height: 500px;
 }
