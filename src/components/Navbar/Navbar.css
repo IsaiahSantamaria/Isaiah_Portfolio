@@ -1,56 +1,39 @@
-
 @import "../../styles/global.css";
-a{
-    text-decoration:none;
+
+a {
+    text-decoration: none;
     font-size: 1.2rem;
     color: var(--bright-font-dark);
 }
 
-a:hover{
+a:hover {
     color: var(--font-dark);
 }
 
-nav{
-    display:flex;
+nav {
+    display: flex;
+    overflow: hidden;
     justify-content: space-between;
-    align-items:center;
-    width:100%;
-    /*creating padding*/
-    padding-top:10px;
-
-    position: sticky; /* Activates sticky positioning */
-    top: 0;           /* Locks it to the very top of the viewport */
-    z-index: 1000;    /* Forces the navbar to stay on top of other content */
-    width: 100%; 
-
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: var(--background-dark);
 }
 
-.mobileNavbar{
-    display:none;
-
-
+#mobileNavbar {
+    display: none;
 }
 
-
-@media screen and (max-width: 800px){
-    
-
-    #navbar_left,#navbar_right {
-        display:none;
-        
+@media screen and (max-width: 800px) {
+    #navbar_left,
+    #navbar_right {
+        display: none;
     }
 
-
-    
-
-    .mobileNavbar{
-        display:block
+    #mobileNavbar {
+        display: block;
     }
-
-    
-
-
 }
-
-
