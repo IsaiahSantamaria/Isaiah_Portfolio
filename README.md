@@ -2,10 +2,10 @@
   Isaiah's Portfolio
 </h1>
 <p align="center">
-  Click this <a href="https://gazijarin.com" target="_blank">Link</a> to visit my portfolio that was built with Vite+React, AnimeJs, ThreeJS x Blender, and Tailwind.
+  Click this <a href="https://isaiahsantamaria.github.io/Isaiah_Portfolio/" target="_blank">Link</a> to visit my portfolio that was built with Vite+React, AnimeJs, ThreeJS x Blender, and Tailwind.
 </p>
 <p align="center">
-    <img src="images/projects/Portfolio.png" width="100%" alt="Porfolio"/>
+    <img src="public/images/projects/image.png" width="100%" alt="Porfolio"/>
 </p>
 
 

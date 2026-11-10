@@ -4,7 +4,7 @@ import './Projects.css';
 //images
 import ProjectCard from'./ProjectCard/Project.jsx';
 import img_example from '/home_page.png';
-import portfolio from '/images/projects/Portfolio.png'
+import portfolio from '/images/projects/image.png'
 import peanutsArchImg from '/images/projects/PeanutArch.png';
 import tylersMazeImg from '/images/projects/TylersMaze.png';
 import woodStockAIImg from '/images/projects/WoodStockAI.png';
