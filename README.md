@@ -1,18 +1,32 @@
-# React + Vite
+<h1 align="center">
+  Isaiah's Portfolio
+</h1>
+<p align="center">
+  Click this <a href="https://gazijarin.com" target="_blank">Link</a> to visit my portfolio that was built with Vite+React, AnimeJs, ThreeJS x Blender, and Tailwind.
+</p>
+<p align="center">
+    <img src="images/projects/Portfolio.png" width="100%" alt="Porfolio"/>
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## 🛠 set-up
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+1. Install the dependencies
 
-## React Compiler
+   ```sh
+   npm install
+   ```
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+2. Start the development server
 
-Note: This will impact Vite dev & build performances.
+   ```sh
+   npm run dev
+   ```
 
-## Expanding the ESLint configuration
+## 🚀 build and run for production
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Generate a full static production build
+
+   ```sh
+   npm run build
+   ```
